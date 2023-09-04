@@ -1,0 +1,64 @@
+:root {
+    --primary-color: rgb(99, 197, 208);
+    --primary-color-dark: rgb(72, 152, 160);
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+h1, #result, #storedResult {
+    text-align: center;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+#calculatorContainer {
+    background-color: var(--primary-color);
+    overflow: auto;
+}
+
+form {
+    background-color: white;
+    width: 50%;
+    min-width: 200px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+label, button {
+    display: block;
+    margin: 16px auto 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: var(--primary-color) 1px solid;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: var(--primary-color);
+    border: 1px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+input[type=submit]:hover {
+    background-color: var(--primary-color-dark);
+    border: var(--primary-color) 1px solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Calculator App</h1>
+    </header>
+    <main>
+        <div id="calculatorContainer">
+            <form id="calculator" onsubmit="calculate(event)">
+                <h2>Try the calculator</h2>
+                <div>
+                    <label for="operand1">Enter your first Number:</label>
+                    <input required type="number" id="operand1" />
+                    <button onclick="insertNumber(1)">Insert Stored Result for first Number</button>
+                </div>
+                <div>
+                    <label for="operand2">Enter your Second Number:</label>
+                    <input required type="number" id="operand2" />
+                    <button onclick="insertNumber(2)">Insert Stored Result for second Number</button>
+                </div>
+                <label for="operator">Choose your operation:</label>
+                <select required id="operator" form="calculator">
+                    <option disabled selected></option>
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="divide">Divide</option>
+                    <option value="multiply">Multiply</option>
+                </select>
+                <button onclick="clearValues()">Clear</button>
+                <button onclick="storeResult()">Store Result</button>
+                <input type="submit" value="Calculate" />
+            </form>
+        </div>
+        <p id="result"></p>
+        <p id="storedResult"></p>
+    </main>
+</body>
+</html>

@@ -30,4 +30,5 @@ a {
 /* Makes all image elements have a dotted outline */
 img {
     outline-style: dotted;
+    outline-color: blue;
 }

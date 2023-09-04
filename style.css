@@ -1,0 +1,33 @@
+/* CSS for body changes everything font related in the body of the page to sans serif. */
+body {
+    font-family: sans-serif;
+}
+
+/* Makes all elements with headers italcized. Only 1 and 3 are used in this example. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: italic;
+}
+
+/* Makes all paragraph elements dark purple, italicized and centered on page */
+p {
+    color: rgb(85, 0, 121);
+    font-style: italic;
+    text-align: center;
+}
+
+/* Makes all attributes elements (somewhat) pale blue (I'm colorblind), bold and removes underline from hyperlink. */
+a {
+    background-color: rgba(60, 60, 255, 0.3);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Makes all image elements have a dotted outline */
+img {
+    outline-style: dotted;
+}
